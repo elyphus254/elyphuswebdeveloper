@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyphus-Personal-Portfolio-website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Elyphus <span>Kibe</span></h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!---About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="background-img.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a front-end web developer focused on making beautiful functional and scalable websites and web App.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web developer</span><br>HTML, CSS, Javascript, python.</li>
+                            <li><span>Virtual assistant</span><br>Data Entry, Web scraping, database sql etc.</li>
+                            <li><span>Teacher</span><br>mathematics, geography and swahili.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span><br>Teacher & freelancing</li>
+                            <li><span>2019</span><br>Enumulator Kenya National Bureau of Statistics.</li>
+                            <li><span>2017</span><br>Sales and marketing.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>freecodecamp</li>
+                            <li><span>2017-2021</span><br> Lukenya University</li>
+                            <li><span>2020</span><br>coursera google skills.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                <p>
+                    <ul>
+                        <li>Using HTML, JavaScript and CSS to bring concepts to life.</li>
+                        <li>Implementing design on mobile websites.</li>
+                        <li>Optimizing the user experience.</li>
+                        <li>Following SEO best practices.</li>
+                        <li>Developing and maintaining the user interface.</li>
+                    </ul>
+                </p>
+                    <a target="_blank" href="https://www.freecodecamp.org/elyphus">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Online Tutoring</h2>
+                    <p> I'm a resourceful Teacher with 3 years of experience in teaching math and geography courses to high school students.</p>
+                    <a target="_blank" href="https://www.linkedin.com/in/elyphus-kibe-a08286202/">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="product landig page.png">
+                    <div class="layer">
+                        <h3>Product Landing Page</h3>
+                        <p>website designed specifically to promote or sell product or persuade visitors to convert to a product-related offer.
+                        </p>
+                        <a target="_blank" href="https://www.freecodecamp.org/elyphus"><i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="skyline.png">
+                    <div class="layer">
+                        <h3>City Skyline</h3>
+                        <p> I built a city skyline using HTML and CSS.
+                        </p>
+                        <a target="_blank" href="https://www.freecodecamp.org/elyphus"><i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="registration form.png">
+                    <div class="layer">
+                        <h3>Registration form</h3>
+                        <p>Using the online registration form, you may gather Contact information and encourage people to interact with you.
+                        </p>
+                        <a target="_blank" href="https://www.freecodecamp.org/elyphus"><i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+
+            </div>
+            <a target="_blank" href="https://www.freecodecamp.org/elyphus" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>elyphus50@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0746996532</p>
+
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/elyphus.kibe/"><i class="fab fa-facebook"></i> </a>
+                        <a target="_blank" href="https://twitter.com/DjElyph254"><i class="fab fa-twitter-square"></i> </a>
+                        <a target="_blank" href="https://www.instagram.com/elyphus/"><i class="fab fa-instagram"></i> </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/elyphus-kibe-a08286202/"><i class="fab fa-linkedin"></i> </a>
+                    </div>
+                    <a target="_blank" href="Resume-Elyphus--Kibe.pdf" download class="btn btn2">Download CV</a>
+
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright @Elyphus Kibe. <i class="fas fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <script>
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ7hVMJnpOFM1qDdY-qLQZPv8iEumAij_Obt9-nSeAtyxm8YvSnStg6c6LufDluVPF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg ")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
