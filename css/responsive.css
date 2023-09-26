@@ -1,0 +1,207 @@
+/*==============================================================================
+
+ * Template Name: Dahuk - Portfolio Template
+ * Template URI: 
+ * Author: ixtheme - (https://themeforest.net/user/ixtheme)
+ * Description: Portfolio Template
+ * Version: 1.0
+ * Copyright 2020 ixtheme
+
+ ==============================================================================*/
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1200px) {
+	.about-wrapper .nav-pills.flex-column {
+		-ms-flex-direction: initial !important;
+		flex-direction: initial !important;
+		border-bottom: 1px solid #343b48;
+	}
+	.about-wrapper .nav-pills.flex-column a.nav-link {
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		max-width: 100%;
+		text-align: center;
+		padding: 12px 0.5rem;
+	}
+}
+
+/* Large devices (desktops, 991px and down) */
+@media (max-width: 991px) {
+	.menu-links {
+		-ms-flex-pack: end;
+		justify-content: end;
+	}
+    .intro-img {
+		padding-right: 0;
+	}
+	.intro h1 {
+		font-size: 36px;
+	}
+	.intro p {
+		margin-top: 20px;
+	}
+	.counter-item:nth-child(1) {
+		margin-top: 35px;
+	}
+	.clients-wrapper .section-header {
+		text-align: center;
+	}
+}
+
+/* Large devices (desktops, 991px and down) */
+@media (max-width: 767px) {
+	.menu-toggle {
+		display: block;
+		position: relative;
+		z-index: 99999;
+		transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-webkit-transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-moz-transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-ms-transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-o-transition: 0.4s cubic-bezier(.7,0,.3,1);
+	}
+	.menu-toggle.clicked .fa-bars::before {
+		content: "\f00d";
+	}
+	.menu-links {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 300px;
+		-ms-flex-direction:column;
+		flex-direction: column;
+		background-color: #212631;
+		padding: 80px 0 50px 0;
+		text-align: center;
+		height: 100vh;
+		-ms-flex-pack: center;
+		justify-content: center;
+		outline: 1px solid #404248;
+		outline-offset: -16px;
+		transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-webkit-transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-moz-transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-ms-transition: 0.4s cubic-bezier(.7,0,.3,1);
+		-o-transition: 0.4s cubic-bezier(.7,0,.3,1);
+	}
+	.menu-links.show {
+		right: 0;
+		line-height: 50px;
+	}
+	.menu-links.show a.nav-link {
+		font-size: 18px;
+	}
+	.landing-content .row.align-items-center.justify-content-center {
+		-ms-flex-pack: start !important;
+		justify-content: start !important;
+	}
+	.intro-img {
+		margin-bottom: 40px;
+	}
+	.landing-wrapper {
+		height: initial;
+	}
+	.landing-content {
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+	.about-wrapper .tab-pane {
+		padding: 30px;
+	}
+	.about-wrapper .nav-pills.flex-column a.nav-link {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+	}
+	.social-links a {
+		padding: 0 15px;
+	}
+	.social-links a:last-child {
+		padding-right: 15px;
+	}
+	.clients-carousel-item {
+		text-align: center;
+	}
+	.cilent-image {
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.contact-info {
+		margin-bottom: 50px;
+	}
+	.go-top {
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+		right: 25px;
+	}
+	.go-top.show {
+		bottom: 40px;
+	}
+	.wrapper::after {
+		left: calc(50% - 150px);
+		width: 300px;
+	}
+	.container-huk.work-preview-wrap {
+		padding: 0;
+	}
+}
+
+/* Small devices (mobile, 575px and down) */
+@media (max-width: 575px) {
+    .container-huk {
+		padding: 0 15px;
+	}
+	.landing-content .col-lg-4.col-md-5.col-6 {
+		-ms-flex: 0 0 60%;
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+	.wrapper {
+		padding: 80px 0;
+	}
+	.about-wrapper .nav-pills .nav-link {
+		font-size: 15px;
+	}
+	.section-header h2 {
+		font-size: 25px;
+	}
+	.wrapper::after {
+		left: calc(50% - 120px);
+		width: 240px;
+	}
+	.go-top {
+		right: 15px;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+	}
+	.go-top.show {
+		bottom: 30px;
+	}
+}
+
+/* extraSmall devices ( 400px and down) */
+@media (max-width: 400px) {
+	.menu-links {
+		width: 100%;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.menu-links.show {
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+	.landing-content .col-lg-4.col-md-5.col-6 {
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;
+	}
+	.about-wrapper .tab-pane {
+		padding: 20px;
+	}
+}
