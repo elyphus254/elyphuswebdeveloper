@@ -1824,7 +1824,7 @@
           <div class="row justify-content-center mt-5 pt-lg-5">
             <div class="col-lg-8">
               <form
-              action="https://script.google.com/macros/s/AKfycbxe-2AJX1ejEKZQM6wnjHuxCHYLySQPVDKeM-I033LPk7a8-0NfGlH0d3vM6g2IRS7GEg/exec" method="POST"
+              action="https://script.google.com/macros/s/AKfycbxR5TGVmxiP6Wf8qWQg-xnZmUS3ycdnnUHdpnH4HpBeJIgRoTx59kmkP6TptwHp2JBC6w/exec" method="POST"
               name="submit-to-google-sheet"
               id ="btn-form-contact"
                
@@ -1918,7 +1918,7 @@
                 <!-- //.row -->
               </form>
 
-              <span id="msg"></span>
+              <span id="msg" style="color:azure;"></span>
 
             </div>
             <!-- //.col-lg-8 -->
@@ -1929,9 +1929,9 @@
       </section>
       <!-- //Section - Contact End -->
 
-      <div id="thank-you-message" style="display: none;">
-        <p>Thank you for reaching out with your request. I've received it and will review the details as soon as I can. I appreciate your consideration in thinking of me for this work. I'll be in touch shortly to discuss further or provide any necessary feedback. Have a great day!</p>
-      </div>
+    
+
+
       
   
       <!-- Footer End -->
@@ -1965,6 +1965,24 @@
       ></a>
     
       <!--contact table js-->
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxR5TGVmxiP6Wf8qWQg-xnZmUS3ycdnnUHdpnH4HpBeJIgRoTx59kmkP6TptwHp2JBC6w/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+               msg.innerHTML = "Thank you for reaching out with your request. I've received it and will review the details as soon as I can. I appreciate your consideration in thinking of me for this work. I'll be in touch shortly to discuss further or provide any necessary feedback. Have a great day!"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              }, 8000)
+              form.reset
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
       
   
       <!-- Main JS -->
