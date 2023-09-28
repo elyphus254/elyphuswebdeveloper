@@ -666,8 +666,7 @@ footer ul > li a i {
   opacity: 0.7;
 }
 
-.git a {
-  padding-right: 71px;
-  padding-top: 10px;
 
+.fa-github {
+  font-size: 50px;
 }
